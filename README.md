@@ -1,5 +1,4 @@
 ## web-tsukkomi5
 
-## req
- - mkdir `flash`
- - put `.swf` files under `flash/`
+## online
+[槽团主页](tsukkomi5.cn)
