@@ -10,7 +10,7 @@ public class FlashController {
     @ResponseBody
     @RequestMapping(value = {"", "/"}, method = RequestMethod.GET)
     public String index() {
-        String html = "";
+        String html = "<h1>游戏策划demo</h1><p>尹航，yh17624096642@163.com</p>";
         String staticPath = System.getProperty("user.dir") + "/src/main/resources/static/";
         File flashFolder = new File(staticPath + "flash");
         for (File flashFile: flashFolder.listFiles()) {
@@ -28,10 +28,9 @@ public class FlashController {
     @ResponseBody
     @RequestMapping(value = "/play/{flashFileName}", method = RequestMethod.GET)
     public String play(@PathVariable("flashFileName") String flashFileName) {
-//        System.out.println(System.getProperty("user.dir"));
-        File flashFolder = new File("flash/" + flashFileName + ".swf");
-        System.out.println(flashFolder.getAbsolutePath());
-        String html = "<embed src=\"/flash/" + flashFileName + ".swf\" width=\"600\" height=\"500\"" +
+        String html = "<h1>" + flashFileName + "</h1>";
+        html += "<p>flash加载较慢请耐心等待</p><br />";
+        html += "<embed src=\"/flash/" + flashFileName + ".swf\" width=\"600\" height=\"500\"" +
                 "type=\"application/x-shockwave-flash\"></embed>";
         return html;
     }
