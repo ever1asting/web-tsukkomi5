@@ -69,8 +69,58 @@
                 <img src="/image/waterfall/10.jpg" alt="">
             </div>
         </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/13.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/14.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/15.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/16.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/17.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/18.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/19.jpg" alt="">
+            </div>
+        </div>
+        <div class="pin">
+            <div class="box">
+                <img src="/image/waterfall/20.jpg" alt="">
+            </div>
+        </div>
 
     </div>
 </body>
+
+<script>
+    window.onload = function() {
+        // alert(location.href.indexOf('#reloaded'));
+        if(location.href.indexOf('#reloaded') == -1) {
+            location.href = location.href + "#reloaded";
+            location.reload();
+        }
+    }
+</script>
 
 </html>
