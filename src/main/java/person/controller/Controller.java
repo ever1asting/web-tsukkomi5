@@ -14,6 +14,7 @@ public class Controller {
         return "<p>Welcome to tsukkomi5</p>" +
                 "<p>欢迎来到五班吐槽团主页</p>" +
                 "<br /><a href=\"/flash\">点我观看flash列表</a>" +
-                "<br /><a href=\"/dy\">点我欣赏邓总生平</a>";
+                "<br /><a href=\"/dy\">点我欣赏邓总生平</a>" +
+                "<br /><a href=\"/waterfall\">点我看图片瀑布流</a>";
     }
 }
