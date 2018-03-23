@@ -12,6 +12,8 @@ public class DyController {
     @RequestMapping(value = {"", "/"}, method = RequestMethod.GET)
     public String index() {
         String html = "<img src=\"/image/dy-cover.jpg\"></img>";
+        html += "<br /><p>应邓总要求加入成绩单</p>";
+        html += "<img src=\"/image/dy-cet.jpg\"></img>";
         return html;
     }
 }
